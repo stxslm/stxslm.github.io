@@ -1,0 +1,256 @@
+body {
+    background-image: url("../images/main.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+.left {
+    width: 225px
+}
+
+.left .account,
+.left .transaction,
+.left .collect,
+.left .help {
+    padding-top: 35px;
+    padding-bottom: 25px;
+    margin-bottom: 2px;
+    background-color: #fff
+}
+
+.left .account ul h3,
+.left .transaction ul h3,
+.left .collect ul h3,
+.left .help ul h3 {
+    margin-left: 52px
+}
+
+.left .account ul li,
+.left .transaction ul li,
+.left .collect ul li,
+.left .help ul li {
+    margin-top: 27px;
+    margin-left: 52px
+}
+
+.left .account ul li:hover,
+.left .transaction ul li:hover,
+.left .collect ul li:hover,
+.left .help ul li:hover {
+    list-style-type: disc;
+    color: #27ba9b
+}
+
+.left .account ul li a,
+.left .transaction ul li a,
+.left .collect ul li a,
+.left .help ul li a {
+    display: inline-block;
+    width: 225px
+}
+
+.left .account ul li a:hover,
+.left .transaction ul li a:hover,
+.left .collect ul li a:hover,
+.left .help ul li a:hover {
+    color: #27ba9b
+}
+
+.left .help {
+    padding-bottom: 71px
+}
+
+.right {
+    float: right;
+    width: 996px
+}
+
+.right .name {
+    margin-bottom: 20px;
+    height: 132px;
+    background-image: url("../images/main.png");
+    background-position: 0 -138px
+}
+
+.right .name .left {
+    height: 132px
+}
+
+.right .name .left img {
+    float: left;
+    margin-top: 26px;
+    margin-left: 60px;
+    width: 85px
+}
+
+.right .name .left .user {
+    display: inline-block;
+    margin-left: 26px;
+    line-height: 132px;
+    color: #fff
+}
+
+.right .name .right {
+    float: right;
+    width: 445px
+}
+
+.right .name .right li {
+    float: left;
+    margin-right: 100px;
+    margin-top: 36px
+}
+
+.right .name .right li:last-child {
+    margin-right: 53px
+}
+
+.right .name .right li a {
+    color: #fff
+}
+
+.right .name .right li .member,
+.right .name .right li .security,
+.right .name .right li .security {
+    text-align: center;
+    font-size: 32px
+}
+
+.right .name .right li i {
+    display: block
+}
+
+.right .my_order {
+    height: 375px;
+    background-color: #fff
+}
+
+.right .my_order .title {
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 60px;
+    line-height: 60px
+}
+
+.right .my_order .title h3 {
+    float: left;
+    font-weight: 400;
+    font-size: 19px
+}
+
+.right .my_order .title a {
+    color: #999
+}
+
+.right .my_order .top .unpaid {
+    float: right;
+    margin-top: 60px;
+    margin-right: 80px;
+    font-size: 14px;
+    color: #e05e30
+}
+
+.right .my_order .bottom .unpaid {
+    float: right;
+    margin-top: 50px;
+    margin-right: 80px;
+    font-size: 14px;
+    color: #e05e30
+}
+
+.right .my_order .top,
+.right .my_order .bottom {
+    margin-left: 12px;
+    width: 971px;
+    height: 136px;
+    border: 1px solid #f4f4ff
+}
+
+.right .my_order .top .introduce,
+.right .my_order .bottom .introduce {
+    float: left;
+    height: 136px;
+    width: 590px;
+    border-right: 1px solid #f4f4f4
+}
+
+.right .my_order .top .introduce a img,
+.right .my_order .bottom .introduce a img {
+    float: left;
+    margin: 16px 12px;
+    width: 106px
+}
+
+.right .my_order .top .introduce a p,
+.right .my_order .bottom .introduce a p {
+    margin-top: 48px;
+    float: left
+}
+
+.right .my_order .top .introduce a .size,
+.right .my_order .bottom .introduce a .size {
+    font-size: 14px;
+    color: #999
+}
+
+.right .my_order .top .price,
+.right .my_order .bottom .price {
+    float: left;
+    width: 198px;
+    height: 136px;
+    border-right: 1px solid #f4f4f4
+}
+
+.right .my_order .top .price .value,
+.right .my_order .bottom .price .value {
+    margin-top: 40px;
+    color: #e05e30
+}
+
+.right .my_order .top .price p,
+.right .my_order .bottom .price p {
+    font-size: 14px;
+    text-align: center
+}
+
+.right .my_order .top .operation,
+.right .my_order .bottom .operation {
+    float: right;
+    width: 180px;
+    height: 136px
+}
+
+.right .my_order .top .operation li,
+.right .my_order .bottom .operation li {
+    text-align: center
+}
+
+.right .my_order .top .operation li a,
+.right .my_order .bottom .operation li a {
+    font-size: 14px
+}
+
+.right .my_order .top .operation li a:hover,
+.right .my_order .bottom .operation li a:hover {
+    color: #27ba9b
+}
+
+.right .my_order .top .operation li .pay,
+.right .my_order .bottom .operation li .pay {
+    margin-top: 28px;
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px
+}
+
+.right .my_order .top .operation li .pay:hover,
+.right .my_order .bottom .operation li .pay:hover {
+    color: #fff;
+    background-color: #27ba9b
+}
+
+/*# sourceMappingURL=personal_center.min.css.map */
