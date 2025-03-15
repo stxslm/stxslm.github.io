@@ -1,0 +1,138 @@
+body {
+    background-image: url("../Photo01/grass.png");
+    text-align: center;
+    font-size: 100px;
+    padding-top: 20%;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* 右上角的盒子 */
+.top-right-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 230px;
+    border: 1px solid purple;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/* 左侧小盒子，宽度固定 60px */
+.top-right-left {
+    height: 60px;
+    width: 60px;
+    border-right: 1px solid purple;
+    /* 可选：分隔线效果 */
+    box-sizing: border-box;
+}
+
+.top-right-left img {
+    max-width: 100%;
+    max-height: 100%;
+    /* 或根据需要设置具体尺寸，例如：
+    width: 60px;
+    height: 60px;
+    */
+    display: block;
+    margin: auto;
+}
+
+/* 右侧小盒子，占剩余空间 */
+.top-right-right {
+    height: 60px;
+    flex: 1;
+    /* 自动填充剩余宽度 */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    /* 可根据需要调整文字大小 */
+}
+
+/* 新侧边栏按钮盒子 */
+.sidebar-toggle-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120px;
+    /* 与侧边栏宽度保持一致 */
+    height: 60px;
+    /* 可根据需要调整高度 */
+    background-color: transparent;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    /* 调整位置，避开顶部按钮盒 */
+    left: 0;
+    width: 120px;
+    height: calc(100% - 60px);
+    /* 高度减去按钮盒的高度 */
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    transition: background-color 0.8s ease, left 0.8s ease;
+
+}
+
+/* 鼠标悬停侧边栏时变为草绿色 */
+.sidebar-box:hover {
+    background-color: rgb(0, 252, 164);
+}
+
+/* 当侧边栏添加 .hidden 类时，向左隐藏 */
+.sidebar.hidden {
+    left: -150px;
+}
+
+/* 三横短线按钮样式 */
+.toggle-btn {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* 侧边栏中的链接小盒子 */
+.sidebar-box {
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(252, 160, 0);
+    /* 根据需要修改文字颜色 */
+    border-bottom: 1px solid rgb(0, 0, 0);
+    /* 如需区分边框 */
+    font-size: 20px;
+    /* 根据需要修改字体大小 */
+    text-decoration: none;
+
+
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: rgb(0, 255, 200);
+    text-decoration: none;
+}
+
+#sidebar a {
+    color: #000;
+}
